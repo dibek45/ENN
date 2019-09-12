@@ -1,0 +1,22 @@
+<div class="card highlight-card " >
+    
+    <div class="example-container" style="background-color: white; border:1px solid #ccc">
+        <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()" >   
+              <mat-toolbar style="background-color: white">Iniciar Session <img src="../../../assets/reunion.png" width="50px"> 
+                    <div></div>
+            </mat-toolbar>
+              <mat-form-field style="display: block">
+              
+                <input matInput placeholder="Usuario" formControlName="usuario"  required style="color:black">
+              </mat-form-field>
+
+              <mat-form-field style="display: block">
+                <textarea matInput placeholder="Contraseña" formControlName="password" style="color:black"></textarea>
+              </mat-form-field>
+            <button mat-raised-button color="primary" style="width:100%;" >Ingresar</button>
+      </form> 
+    </div>
+    
+</div>
+
+   
